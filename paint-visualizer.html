@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Paint Color Visualizer | Unity Painting Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0d1f2d;--navy2:#162636;
+    --white:#ffffff;--soft-grey:#f2f5f8;--mid-grey:#e2e8ed;
+    --teal:#1a8a7a;--teal-lt:#22b5a0;
+    --text:#1c2b38;--muted:#4e6070;--light:#8099ae;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;font-family:'Inter',sans-serif;color:#fff;min-height:100vh;
+    background:radial-gradient(120% 140% at 15% 0%,#15314a 0%,var(--navy) 55%,var(--navy2) 100%);
+    display:flex;align-items:center;justify-content:center;text-align:center;padding:5%;
+  }
+  h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);margin:0 0 14px;color:#fff}
+  h1 em{font-style:normal;color:var(--teal-lt)}
+  .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(26,138,122,0.18);border:1px solid rgba(26,138,122,0.5);color:var(--teal-lt);padding:6px 18px;border-radius:40px;font-size:0.74rem;letter-spacing:2.5px;text-transform:uppercase;font-weight:600;margin-bottom:22px}
+  p{color:rgba(255,255,255,0.8);font-size:1.02rem;max-width:480px;margin:0 auto 30px;line-height:1.65}
+  .swatches{display:flex;gap:10px;justify-content:center;margin-bottom:34px}
+  .swatches span{width:34px;height:34px;border-radius:8px;box-shadow:0 4px 14px rgba(0,0,0,0.3)}
+  .btn-teal{background:var(--teal);color:#fff;padding:13px 28px;border-radius:7px;font-weight:600;font-size:0.92rem;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s;box-shadow:0 4px 16px rgba(26,138,122,0.4)}
+  .btn-teal:hover{background:var(--teal-lt);transform:translateY(-2px)}
+</style>
+</head>
+<body>
+  <div>
+    <div class="badge">✦ Painter Tools</div>
+    <h1>Paint Color <em>Visualizer</em></h1>
+    <div class="swatches">
+      <span style="background:#1a8a7a"></span>
+      <span style="background:#22b5a0"></span>
+      <span style="background:#0d1f2d"></span>
+      <span style="background:#8099ae"></span>
+      <span style="background:#f2f5f8"></span>
+    </div>
+    <p>This tool is on the way. Soon you'll be able to preview Unity paint colors on real wall photos right from your account.</p>
+    <a class="btn-teal" href="signup.html">&larr; Back to Sign-Up</a>
+  </div>
+</body>
+</html>
